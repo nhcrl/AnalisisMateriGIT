@@ -1,0 +1,42 @@
+﻿Analisis Materi GIT
+
+
+Git adalah Group Inclusive Tour. Secara sederhana Git membantu para pengembang untuk bekerja secara bersama untuk megembangkan proyek. Git memiliki dua sistem, yaitu:
+1. Centralized, Centralized Git bekerja dengan menggunakan satu server yang berfungsi untuk menyimpan data proyek. Sistem git ini membutuhkan koneksi jaringan untuk mengakses data proyek. Selain itu, ketika terjadi kesalahan pada server, seperti kegagalan server, data proyek di server juga dapat hilang.
+2. Distributed, Git Terdistribusi bekerja dengan menyimpan data proyek secara lokal maupun di server. Oleh karena itu, lebih aman jika terjadi sesuatu pada server, seperti server down, karena sudah ada cadangan lokal dari data proyek. 
+Git menggunakan pendekatan terdistribusi yang memiliki beberapa konsep atau fitur utama, yaitu:
+1. Version Control yang digunakan untuk menyimpan perubahan pada source code. 
+2. Konsep selanjutnya adalah Repositories, secara singkat repository merupakan penyimpanan untuk proyek yang sedang dirancang, didalamnya terdapat kode, riwayat perubahan dan lainnya. Terdapat dua hal dalam konsep repository yaitu repository yang lokal juga yang ada dalam Github maupun Gitlab. 
+3. Selanjutnya, terdapat konsep Commit, commit merupakan penunjuk riwayat perubahan yang dilakukan, setiap commit bertujuan agar pengembang mengetahui perubahan yang sudah dilakukan pengembang lainnya. 
+4. Git Branch atau Branches adalah fitur yang digunakan untuk membuat salinan yang memungkinkan pengembang untuk melakukan perbaikan terpisah tanpa mengganggu kode utama, ketika perubahan selesai dilakukan, branches dapat digabungkan kembali ke branch utama atau main/master.
+5. Merge atau merging adalah proses penggabungan perubahan dari satu branch ke branch utama. 
+6. Pull request, fitur ini adalah meminta pengembang untuk mengecek dan meninjau dan menggabungkan perubahan dari branch tertentu.
+7. Git Rebase digunakan untuk menggabungkan atau menggeser commit base.
+8. Hooks adalah skrip yang dijalankan secara otomatis saat terjadi peristiwa tertentu dalam Git.
+9. GUI Tools, Git menyediakan alat GUI, seperti GitKraken dan Sourcetree, untuk membuat Git lebih mudah bagi pengguna yang baru mengenal baris perintah. 
+
+
+Kelebihan
+1. Memudahkan pelacakan perubahan kode sumber dengan mudah dan efisien.
+2. Melakukan branching dan merging dengan mudah.
+3. Melacak perubahan dan siapa yang membuat perubahan pada source code.
+4. Lebih stabil dan cepat dalam pengelolaan kode sumber yang besar (untuk Gitlab).
+Kekurangan
+1. Kurang ramah bagi pemula karena memiliki fitur yang kompleks.
+2. Bagi pengguna baru harus mempunyai pemahaman yang mendalam mengenai konsep dasar yang ada dalam Git sebelum mulai menggunakan Git.
+3. Tidak cocok digunakan untuk pengelolaan file biner atau non-teks.
+
+
+Git juga merupakan sistem kontrol yang mendasari Github dan Gitlab, Github platform hosting populer untuk repositori Git. Github menawarkan fitur seperti pull request untuk memfasilitasi peninjauan kode dan menggabungkan perubahan, pelacakan masalah dan patch, serta integrasi dengan banyak alat pengembangan lainnya. Sementara, Gitlab adalah platform yang mirip dengan Github yang juga menyediakan hosting untuk repositori Git. Namun, Gitlab juga menawarkan versi yang dihosting sendiri, memungkinkan Anda menginstalnya di server internal atau cloud pribadi. 
+
+
+Dalam modul yang dijelaskan, penulis mempelajari step by step untuk menginstall Github sebagai media yang akan digunakan nantinya, dalam instalasi atau pemasangan Github di perangkat adalah dengan menginstall git terlebih dahulu, setelah itu memulai instalasi yang nantinya akan muncul Git Bash. Selanjutnya melakukan konfigurasi dan mendaftarkan akun gitHub dengan menggunakan email. Untuk dapat membuat repository di Github, pengembang dapat membuat repository di lokal maupun di github dengan nama yang sama. Github memiliki tiga fitur penting didalamnya, yaitu forking untuk membuat proyek baru berdasarkan repository yang sudah ada. Pull request untuk menginformasikan pengembang lain bahwa pengembang sudah memindahkan perubahan dari branch ke master/main repository serta merging untuk menggabungkan code yang sudah diubah pada suatu branch ke branch lainnya. Keunggulan menggunakan Github adalah tidak perlu mengeluarkan biaya apapun untuk digunakan. Sementara kekurangan Github terdapat pada keamanan yang tidak berlaku untuk repository pribadi/private.
+
+
+Materi Git yang dipelajari juga menjelaskan CI-CD dan Dokumentasi (Issue dan Wiki) pada Github Actions.
+
+
+* CI/CD adalah istilah yang umum digunakan dalam pengembangan aplikasi. Seringkali saat membuat aplikasi, pemrogram menghadapi banyak kesulitan dalam pengujian, integrasi kode, dan penerapan manual. Pada dasarnya CI/CD adalah serangkaian metode pengembangan perangkat lunak atau aplikasi untuk melakukan beberapa perubahan secara otomatis. Continuous Delivery atau Continuous Deployment adalah metode yang diambil setelah proses CI selesai dan semua kode berhasil diintegrasikan, sehingga aplikasi dapat dibuat dan dikembangkan secara otomatis.
+
+
+* Issue adalah fitur yang memungkinkan pengguna untuk melacak masalah atau permintaan fitur dalam proyek perangkat lunak. Issue dapat dibuat dan dikelola oleh pengguna atau anggota tim pengembangan proyek. Issue juga dapat digunakan untuk melacak riwayat perubahan proyek. Sementara Wiki adalah fitur di Git yang memungkinkan pengguna membuat dan mengelola dokumentasi untuk proyek perangkat lunak. Wiki sering berisi informasi seperti panduan pengguna, spesifikasi, dan petunjuk pemasangan. Wiki sering digunakan untuk mengumpulkan semua informasi terkait proyek dan memudahkan anggota tim pengembangan dan pengguna akhir untuk mengakses proyek.
